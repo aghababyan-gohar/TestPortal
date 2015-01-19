@@ -1,0 +1,39 @@
+﻿@using TestPortal.Models;
+@using MvcPager;
+@model List<GroupViewModel>
+@{
+    ViewBag.Title = "Groups";
+    int totalCount = ViewBag.TotalCount;
+    int pageSize = ViewBag.PageSize;
+    int currentPage = ViewBag.CurrentPage;
+    int totalPage = ViewBag.TotalPage;
+}
+
+<h2>Groups</h2>
+
+<div>
+    <table class="table table-bordered table-striped">
+        <tr class="row">
+            <th class=".col-md-4"><label>Name</label></th>
+            <th class=".col-md-4"><label>Description</label></th>
+            <th class=".col-md-4"><label>Number of members</label></th>
+            <th class=".col-md-4"><label>Number of stories</label></th>
+        </tr>
+        @if (Model != null && Model.Count > 0)
+        {
+            foreach (var group in Model)
+            {
+                <tr class="row">
+                    <td>@group.Name</td>
+                    <td>@group.Description</td>
+                    <td>@group.UserCount</td>
+                    <td>@group.StoryCount</td>
+                </tr>
+            }
+        }
+    </table>
+
+    <br />
+
+    @Html.Pager(pageSize, currentPage, totalCount)
+</div>

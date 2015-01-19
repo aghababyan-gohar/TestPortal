@@ -1,0 +1,9 @@
+C:\Users\User\Documents\Visual Studio 2013\Projects\TestPortal\TestPortal.BL\bin\Debug\TestPortal.BL.dll
+C:\Users\User\Documents\Visual Studio 2013\Projects\TestPortal\TestPortal.BL\bin\Debug\TestPortal.BL.pdb
+C:\Users\User\Documents\Visual Studio 2013\Projects\TestPortal\TestPortal.BL\bin\Debug\TestPortal.DAL.dll
+C:\Users\User\Documents\Visual Studio 2013\Projects\TestPortal\TestPortal.BL\bin\Debug\EntityFramework.dll
+C:\Users\User\Documents\Visual Studio 2013\Projects\TestPortal\TestPortal.BL\bin\Debug\TestPortal.DAL.pdb
+C:\Users\User\Documents\Visual Studio 2013\Projects\TestPortal\TestPortal.BL\bin\Debug\EntityFramework.xml
+C:\Users\User\Documents\Visual Studio 2013\Projects\TestPortal\TestPortal.BL\obj\Debug\TestPortal.BL.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\Visual Studio 2013\Projects\TestPortal\TestPortal.BL\obj\Debug\TestPortal.BL.dll
+C:\Users\User\Documents\Visual Studio 2013\Projects\TestPortal\TestPortal.BL\obj\Debug\TestPortal.BL.pdb

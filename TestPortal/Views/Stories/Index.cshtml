@@ -1,0 +1,40 @@
+﻿@using TestPortal.Models;
+@using MvcPager;
+@model List<StoryViewModel>
+
+@{
+    ViewBag.Title = "Index";
+    int totalCount = ViewBag.TotalCount;
+    int pageSize = ViewBag.PageSize;
+    int currentPage = ViewBag.CurrentPage;
+    int totalPage = ViewBag.TotalPage;
+}
+
+<h2>My Stories</h2>
+
+<div class="grid-container">
+    @Html.ActionLink("Create New story", "Create", null, new { @class = "btn btn-default" })
+    @if (Model != null && Model.Count > 0)
+    {
+        <div id="story-list-container">
+            <ul class="list-group">
+                @foreach (var story in Model)
+                {
+                    <li class="list-group-item">
+                        <div class="list-group-item-heading">
+                            <h4>@story.Title</h4>
+                            <span>@Html.ActionLink("Details", "Details", new { id = @story.StoryID }) @Html.ActionLink("Edit", "Edit", new { id = @story.StoryID })</span>
+                        </div>
+                        <p class="list-group-item-text">
+                            @story.Description
+                        </p>
+                    </li>
+                }
+            </ul>
+        </div>
+
+    <br />    
+    }
+
+    @Html.Pager(pageSize, currentPage, totalCount)
+</div>
